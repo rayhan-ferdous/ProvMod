@@ -166,7 +166,7 @@ class Module:
         except Exception as e:
             err.error(str(e))
 
-    def run(self, when = True):
+    def run(self, when = True, false_return = None):
 
         if when is True:
             self.logStart()
@@ -182,7 +182,7 @@ class Module:
             return self.outgoing
 
         else:
-            return None
+            return false_return
 
 class User:
 

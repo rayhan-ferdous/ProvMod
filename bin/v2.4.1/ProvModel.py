@@ -206,7 +206,7 @@ class Module:
 
     def logEnd(self):
         msg = []
-        msg.append('event :: ' + 'module start')
+        msg.append('event :: ' + 'module end')
         msg.append('id :: ' + str(self.id))
         msg.append('user :: ' + str(USER.id))
         deb.debug(';'.join(msg))

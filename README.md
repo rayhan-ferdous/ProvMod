@@ -1,5 +1,5 @@
 # Provmod
-Provmod is a workflow provenance programming model implemented on Python.
+Provmod is a workflow provenance programming model implemented in Python.
 It makes use of the work from https://github.com/rayhan-ferdous/DPLib which is a higher-level logging library made on the layer of Python Logging and creates automated workflow logs when implemented.
 
 See the wiki page https://github.com/rayhan-ferdous/Provmod/wiki for simple tutorial at a glance.

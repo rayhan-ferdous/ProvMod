@@ -1,0 +1,58 @@
+<head>
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+    
+
+var svg = dimple.newSvg("body", 800, 600);
+
+var primarydata = [
+{ "Tools":"FastQC", "Frequency": 1 },
+{ "Tools":"DNALetterCount", "Frequency": 1 },
+{ "Tools":"Entropy", "Frequency": 1 },
+{ "Tools":"MaxMinProb", "Frequency": 1 },
+
+    ];
+	
+var chart = new dimple.chart(svg, primarydata);
+
+chart.addCategoryAxis("x", "Tools");
+chart.addMeasureAxis("y", "Frequency");
+chart.addSeries(null, dimple.plot.bar);
+
+
+chart.draw(500);
+	
+
+setInterval(draw, 800);
+
+function draw()
+{
+
+	d3.tsv("/data/viz.tsv", function(data){
+
+
+
+	chart.data = data;
+	chart.draw(500);
+	
+	console.log('done');
+
+
+
+});
+
+
+      var url = 'localhost:8000/data/viz.tsv';
+
+      d3.csv(url + '?' + Math.floor(Math.random() * 1000));
+}
+
+
+
+
+
+  </script>
+</body>

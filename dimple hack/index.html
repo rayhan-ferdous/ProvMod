@@ -1,30 +1,40 @@
-<html>
-<div id="chartContainer">
+<head>
   <script src="http://d3js.org/d3.v4.min.js"></script>
   <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+</head>
 
-  <script type="text/javascript">
 
-var svg = dimple.newSvg("#chartContainer", 590, 400);
+<body>
+<script type="text/javascript">
     
 
 
-d3.tsv("/data/data.tsv", function (data) {
+var svg = dimple.newSvg("body", 590, 400);
+    
+d3.tsv("/data/viz2.tsv", function (data) {
+
+	console.log(data);
+
       var myChart = new dimple.chart(svg, data);
       myChart.setBounds(65, 45, 505, 315)
-      myChart.addCategoryAxis("x", ["Module"]);
-      myChart.addPctAxis("y", "Load");
-      myChart.addSeries("Status", dimple.plot.bar);
+
+      myChart.defaultColors = [new dimple.color("green"), new dimple.color("red")];
+
+      myChart.addCategoryAxis("x", ["name"]);
+      myChart.addPctAxis("y", "duration");
+      myChart.addSeries("status", dimple.plot.bar);
+
+      myChart.addCategoryAxis("x", ["name"]);
+      myChart.addPctAxis("y", "duration");
+      myChart.addSeries("status", dimple.plot.bar);
       myChart.addLegend(200, 10, 380, 20, "right");
       myChart.draw();
     });
 
 
 
-
-
-
-
+</script>
+</body>
 
 
 

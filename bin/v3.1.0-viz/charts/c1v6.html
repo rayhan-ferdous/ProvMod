@@ -1,0 +1,50 @@
+<head>
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+var data = [{ "label": "", "freq": "", "name": "", "error": "", "cpu": "", "duration": "", "time": "", "tool": "", "count": "", "cpuload": ""}];
+
+
+var svg = dimple.newSvg("body", 590, 400);
+var myChart = new dimple.chart(svg, data);
+myChart.setBounds(60, 30, 500, 330)
+myChart.addCategoryAxis("x", "label");
+myChart.addMeasureAxis("y", "freq");
+myChart.addSeries("label", dimple.plot.bubble);
+myChart.addLegend(200, 10, 360, 20, "right");
+myChart.draw();
+
+
+setInterval(draw, 1500);
+
+function draw()
+{
+  d3.tsv("../data/frequency.tsv", function (data)
+	{
+
+		console.log(data)
+    myChart.data = data;
+
+    myChart.draw(500);
+
+
+	});
+
+  var url = 'localhost:8000/data/frequency.tsv';
+  d3.csv(url + '?' + Math.floor(Math.random() * 1000));
+}
+
+
+
+
+
+</script>
+
+
+
+</body>

@@ -1,0 +1,36 @@
+<head>
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+	var svg = dimple.newSvg("body", 590, 400);
+
+	d3.tsv("../data/frequency.tsv", function (data)
+	{
+
+		console.log(data)
+
+		var myChart = new dimple.chart(svg, data);
+		//myChart.defaultColors = [new dimple.color("green"), new dimple.color("red")];
+
+      myChart.setBounds(60, 30, 500, 330)
+        myChart.addCategoryAxis("x", "label");
+        myChart.addMeasureAxis("y", "freq");
+        myChart.addSeries(["None"], dimple.plot.bubble);
+        //myChart.addLegend(200, 10, 360, 20, "right");
+        myChart.draw();
+
+	});
+
+
+
+
+</script>
+
+
+
+</body>

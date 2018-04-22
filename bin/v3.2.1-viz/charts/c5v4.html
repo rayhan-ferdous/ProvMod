@@ -1,0 +1,59 @@
+<head>
+  <meta http-equiv="refresh" content="3" />
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+
+<div id = "plot">
+
+<script type="text/javascript">
+
+
+
+  d3.tsv("../data/multi_mod_single_prop.tsv", function (data)
+  {
+
+    var svg = dimple.newSvg("body", 5000, 600);
+    var myChart = new dimple.chart(svg, data);
+    myChart.setBounds(60, 30, 1300, 400);
+    var x = myChart.addCategoryAxis("x", "time");
+    x.addOrderRule("time")
+    myChart.addMeasureAxis("y", "cpuload");
+    var s = myChart.addSeries("tool" , dimple.plot.area);
+    s.interpolation = "basis"
+    myChart.addLegend(60, 10, 500, 20, "right");
+
+    myChart.draw();
+
+  });
+
+</script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>

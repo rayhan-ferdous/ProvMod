@@ -1,0 +1,35 @@
+<head>
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+	var svg = dimple.newSvg("body", 5000, 5000);
+
+	d3.tsv("../data/cross.tsv", function (data)
+	{
+
+		console.log(data)
+
+		var myChart = new dimple.chart(svg, data);
+		//myChart.defaultColors = [new dimple.color("green"), new dimple.color("red")];
+
+      myChart.setBounds(60, 100, 1500, 100);
+      var x = myChart.addCategoryAxis("x", "time");
+      x.addOrderRule("time")
+      myChart.addCategoryAxis("y", "name");
+      //myChart.addMeasureAxis("z", "cpuload")
+      var s = myChart.addSeries("name" , dimple.plot.bar);
+      myChart.addLegend(60, 10, 500, 20, "right");
+
+      myChart.draw();
+
+	});
+
+
+
+
+</script>

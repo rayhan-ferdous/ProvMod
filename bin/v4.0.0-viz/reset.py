@@ -5,5 +5,5 @@ graph  = Graph(password = 'password')
 graph.delete_all()
 
 
-
+open('workflow.log', 'w').close()
 

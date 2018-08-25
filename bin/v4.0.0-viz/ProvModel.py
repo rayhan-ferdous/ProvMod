@@ -1,5 +1,6 @@
-# version 2.4.1
 
+
+from datetime import datetime
 import uuid
 import logging
 import configuration
@@ -47,6 +48,10 @@ warn = configuration.logger_warn(logger_name, log_file)
 err = configuration.logger_error(logger_name, log_file)
 fatalerr = configuration.logger_fatal(logger_name, log_file)
 
+def elasticuser(id, name, time):
+    #print 'curl XPUT 127.0.0.1:9200/provenance/users/' + str(id) + ' -d\' {"time": "' + str(time) + '", "name": "' + str(name) + '"}\' '
+    os.system('curl XPUT 127.0.0.1:9200/userindex/users/' + str(id) + ' -d\' {"time": "' + str(time) + '", "name": "' + str(name) + '"}\' ')
+
 
 class User:
 
@@ -54,9 +59,11 @@ class User:
         self.id = uuid.uuid4()
         self.name = getpass.getuser()
 
-        msg = {"event": "USR-INVK", "id": str(self.id), "name": str(self.name), 'time': time.time()}
+        msg = {"event": "USR-INVK", "id": str(self.id), "name": str(self.name), 'time': str( datetime.utcnow() )}
 
         deb.debug(jsonify(msg))
+
+        elasticuser(msg['id'], msg['name'], msg['time'])
 
 
 
@@ -71,6 +78,11 @@ class Data:
         self.id = None
         self.ref = None
         self.user = None
+
+def elasticobject(id, type, value, user, memory, cpu, time, error):
+    #print 'curl XPUT 127.0.0.1:9200/objectindex/modules/' + str(id) + ' -d\' {"time": "' + str(time) + '", "type": "' + str(type) + '", "value": "' + str(value) + '", "user": "' + str(user) + '", "memory": ' + str(memory) + ', "cpu": ' + str(cpu) + ', "error": "' + str(error) + '"    }\' '
+    os.system('curl XPUT 127.0.0.1:9200/objectindex/objects/' + str(id) + ' -d\' {"time": "' + str(time) + '", "type": "' + str(type) + '", "value": "' + str(value) + '", "user": "' + str(user) + '", "memory": ' + str(memory) + ', "cpu": ' + str(cpu) + ', "error": "' + str(error) + '"    }\' ')
+
 
 
 class Object(Data):
@@ -97,15 +109,18 @@ class Object(Data):
                     'type': str(type(reference)),
                     'value': str(reference),
                     'user': str(USER.id),
-                    'memory': str(psutil.virtual_memory()[3]),
-                    'cpu': str(psutil.cpu_percent()),
-                    'time': str(time.time()),
-                    'label': 'object'
+                    'memory': (psutil.virtual_memory()[3]),
+                    'cpu': (psutil.cpu_percent()),
+                    'time': str(datetime.utcnow()),
+                    'label': 'object',
+                    'error': ''
                 }
 
 
 
                 deb.debug(jsonify(msg))
+
+                elasticobject(msg['id'], msg['type'], msg['value'], msg['user'], msg['memory'], msg['cpu'], msg['time'], msg['error'])
 
                 ''' GDB part '''
                 props = ['VALUE:\"' + msg['value'] + '\"', 'id:\"' + msg['id'] + '\"', 'type:\"' + msg['type'] + '\"', 'user:\"' + msg['user'] + '\"', 'error:\"null\"', 'time:\"' + str(msg['time']) + '\"', 'memory:\"' + str(msg['memory']) + '\"', 'cpu:\"' + str(msg['cpu']) + '\"', 'label:\"' + str(msg['label']) + '\"']
@@ -133,15 +148,18 @@ class Object(Data):
                     'type': str(type(reference)),
                     'value': str(reference),
                     'user': str(USER.id),
-                    'error': 'error',
-                    'memory': str(psutil.virtual_memory()[3]),
-                    'cpu': str(psutil.cpu_percent()),
-                    'time': str(time.time()),
+                    'error': 'object creation error',
+                    'memory': (psutil.virtual_memory()[3]),
+                    'cpu': (psutil.cpu_percent()),
+                    'time': str(datetime.utcnow()),
                     'label': 'object'
                 }
 
 
                 err.error(jsonify(msg))
+
+                elasticobject(msg['id'], msg['type'], msg['value'], msg['user'], msg['memory'], msg['cpu'],
+                               msg['time'], msg['error'])
 
 
                 ''' GDB part '''
@@ -153,6 +171,9 @@ class Object(Data):
 
 
 
+def elasticfile(id, user, source, memory, cpu, time, error):
+    #print 'curl XPUT 127.0.0.1:9200/fileindex/files/' + str(id) + ' -d\' {"time": "' + str(time) + '", "user": "' + str(user) + '", "source": "' + str(source) + '", "memory": ' + str(memory) + ', "cpu": ' + str(cpu) + ', "error": "' + str(error) + '"    }\' '
+    os.system('curl XPUT 127.0.0.1:9200/fileindex/files/' + str(id) + ' -d\' {"time": "' + str(time) + '", "user": "' + str(user) + '", "source": "' + str(source) + '", "memory": ' + str(memory) + ', "cpu": ' + str(cpu) + ', "error": "' + str(error) + '"    }\' ')
 
 
 class File(Data):
@@ -175,14 +196,16 @@ class File(Data):
                 'event': 'FIL-CRTN',
                 'id': str(self.id),
                 'user': str(USER.id),
-                'error': 'error',
-                'memory': str(psutil.virtual_memory()[3]),
-                'cpu': str(psutil.cpu_percent()),
-                'time': str(time.time()),
+                'error': 'file creation error',
+                'memory': (psutil.virtual_memory()[3]),
+                'cpu': (psutil.cpu_percent()),
+                'time': str(datetime.utcnow()),
                 'label': 'file'
             }
 
             err.error(jsonify(msg))
+
+            elasticfile(msg['id'], msg['user'], msg['source'], msg['memory'], msg['cpu'], msg['time'], msg['error'])
 
             ''' GDB part   this part is never executed
             props = ['SOURCE:\"' + msg['source'] + '\"', 'id:\"' + msg['id'] + '\"', 'type:\"' + msg['type'] + '\"',
@@ -207,13 +230,16 @@ class File(Data):
                     'type': str(type(f)),
                     'source': str(f.name),
                     'user': str(USER.id),
-                    'memory': str(psutil.virtual_memory()[3]),
-                    'cpu': str(psutil.cpu_percent()),
-                    'time': str(time.time()),
-                    'label': 'file'
+                    'memory': (psutil.virtual_memory()[3]),
+                    'cpu': (psutil.cpu_percent()),
+                    'time': str(datetime.utcnow()),
+                    'label': 'file',
+                    'error': ''
                 }
 
                 deb.debug(jsonify(msg))
+
+                elasticfile(msg['id'], msg['user'], msg['source'] ,msg['memory'], msg['cpu'], msg['time'], msg['error'])
 
                 ''' GDB part '''
                 props = ['SOURCE:\"' + msg['source'] + '\"', 'id:\"' + msg['id'] + '\"', 'type:\"' + msg['type'] + '\"', 'user:\"' + msg['user'] + '\"', 'error:\"null\"', 'time:\"' + str(msg['time']) + '\"',
@@ -237,14 +263,16 @@ class File(Data):
                     'type': str(type(f)),
                     'source': str(f.name),
                     'user': str(USER.id),
-                    'error': 'error',
-                    'memory': str(psutil.virtual_memory()[3]),
-                    'cpu': str(psutil.cpu_percent()),
-                    'time': str(time.time()),
+                    'error': 'other error',
+                    'memory': (psutil.virtual_memory()[3]),
+                    'cpu': (psutil.cpu_percent()),
+                    'time': str(datetime.utcnow()),
                     'label': 'file'
                 }
 
                 err.error(jsonify(msg))
+
+                elasticfile(msg['id'], msg['user'], msg['source'], msg['memory'], msg['cpu'], msg['time'], msg['error'])
 
                 ''' GDB part '''
                 props = ['SOURCE:\"' + msg['source'] + '\"', 'id:\"' + msg['id'] + '\"', 'type:\"' + msg['type'] + '\"',
@@ -276,9 +304,9 @@ class Document(Data):
                 'id': str(self.id),
                 'user': str(USER.id),
                 'error': 'error',
-                'memory': str(psutil.virtual_memory()[3]),
-                'cpu': str(psutil.cpu_percent()),
-                'time': str(time.time()),
+                'memory': (psutil.virtual_memory()[3]),
+                'cpu': (psutil.cpu_percent()),
+                'time': str(datetime.utcnow()),
                 'label': 'document'
             }
 
@@ -299,9 +327,9 @@ class Document(Data):
                     'type': str(type(document)),
                     'address': str(document),
                     'user': str(USER.id),
-                    'memory': str(psutil.virtual_memory()[3]),
-                    'cpu': str(psutil.cpu_percent()),
-                    'time': str(time.time()),
+                    'memory': (psutil.virtual_memory()[3]),
+                    'cpu': (psutil.cpu_percent()),
+                    'time': str(datetime.utcnow()),
                     'label': 'document'
                 }
 
@@ -319,15 +347,20 @@ class Document(Data):
                     'address':  str(document),
                     'user':  str(USER.id),
                     'error':  'error',
-                    'memory': str(psutil.virtual_memory()[3]),
-                    'cpu': str(psutil.cpu_percent()),
-                    'time': str(time.time()),
+                    'memory': (psutil.virtual_memory()[3]),
+                    'cpu': (psutil.cpu_percent()),
+                    'time': str(datetime.utcnow()),
                     'label': 'document'
                 }
 
 
 
                 err.error(jsonify(msg))
+
+
+def elasticmodule(id, time, name, user, memory_run, memory_init, cpu_run, cpu_init, duration_run, duration_init, error):
+    #print 'curl XPUT 127.0.0.1:9200/moduleindex/modules/' + str(id) + ' -d\' {"time": "' + str(time) + '", "name": "' + str(name) + '", "user": "' + str(user) + '", "memory_run": ' + str(memory_run) + ', "memory_init": ' + str(memory_init) + ', "cpu_run": ' + str(cpu_run) + ', "cpu_init": ' + str(cpu_init) + ', "duration_run": "' + str(duration_run) + '", "duration_init": "' + str(duration_init) + '", "error": "' + str(error) + '"    }\' '
+    os.system('curl XPUT 127.0.0.1:9200/moduleindex/modules/' + str(id) + ' -d\' {"time": "' + str(time) + '", "name": "' + str(name) + '", "user": "' + str(user) + '", "memory_run": ' + str(memory_run) + ', "memory_init": ' + str(memory_init) + ', "cpu_run": ' + str(cpu_run) + ', "cpu_init": ' + str(cpu_init) + ', "duration_run": "' + str(duration_run) + '", "duration_init": "' + str(duration_init) + '", "error": "' + str(error) + '"    }\' ')
 
 
 class Module:
@@ -359,7 +392,7 @@ class Module:
 
     def __init__(self, *args):
 
-        start_time = time.time()
+        start_time = datetime.utcnow()
 
         self.id = uuid.uuid4()
         self.user = USER.id
@@ -385,17 +418,20 @@ class Module:
                 'id': str(self.id),
                 'name': str(self.__class__.__name__),
                 'user': str(USER.id),
-                'memory_init': str(psutil.virtual_memory()[3]),
-                'cpu_init': str(psutil.cpu_percent()),
-                'duration_init': str(time.time()-start_time),
-                'time': str(time.time()),
-                'cpu_run': '0',
-                'memory_run': '0',
-                'duration_run': '0',
-                'label': 'module'
+                'memory_init': (psutil.virtual_memory()[3]),
+                'cpu_init': (psutil.cpu_percent()),
+                'duration_init': str(datetime.utcnow()-start_time),
+                'time': str(datetime.utcnow()),
+                'cpu_run': 0,
+                'memory_run': 0,
+                'duration_run': "00:00:00.000000",
+                'label': 'module',
+                'error': ''
             }
 
             deb.debug(jsonify(msg))
+
+            elasticmodule(msg['id'], msg['time'], msg['name'], msg['user'], msg['memory_run'], msg['memory_init'], msg['cpu_run'], msg['cpu_init'], msg['duration_run'], msg['duration_init'], msg['error'])
 
             ''' GDB part '''
             props = ['NAME:\"' + msg['name'] + '\"', 'id:\"' + msg['id'] + '\"',
@@ -439,19 +475,22 @@ class Module:
                 'id': str(self.id),
                 'name': str(self.__class__.__name__),
                 'user': str(USER.id),
-                'error': 'error',
-                'memory_init': str(psutil.virtual_memory()[3]),
-                'cpu_init': str(psutil.cpu_percent()),
-                'duration_init': str(time.time()-start_time),
-                'time': str(time.time()),
-                'cpu_run': '0',
-                'memory_run': '0',
-                'duration_run': '0',
+                'error': 'module initialization error',
+                'memory_init': (psutil.virtual_memory()[3]),
+                'cpu_init': (psutil.cpu_percent()),
+                'duration_init': str(datetime.utcnow()-start_time),
+                'time': str(datetime.utcnow()),
+                'cpu_run': 0,
+                'memory_run': 0,
+                'duration_run': "00:00:00.000000",
                 'label': 'module'
             }
 
             print msg
             err.error(jsonify(msg))
+
+            elasticmodule(msg['id'], msg['time'], msg['name'], msg['user'], msg['memory_run'], msg['memory_init'],
+                          msg['cpu_run'], msg['cpu_init'], msg['duration_run'], msg['duration_init'], msg['error'])
 
             ''' GDB part '''
             props = ['NAME:\"' + msg['name'] + '\"', 'id:\"' + msg['id'] + '\"',
@@ -468,7 +507,7 @@ class Module:
 
     def run(self, when = True, false_return = None):
 
-        start_time = time.time()
+        start_time = datetime.utcnow()
 
         if when is True:
 
@@ -496,13 +535,17 @@ class Module:
                     'id': str(self.id),
                     'name': str(self.__class__.__name__),
                     'user': str(USER.id),
-                    'duration_run': str(time.time()-start_time),
-                    'memory_run': str(psutil.virtual_memory()[3]),
-                    'cpu_run': str(psutil.cpu_percent()),
-                    'time_run': str(time.time())
+                    'duration_run': str(datetime.utcnow()-start_time),
+                    'memory_run': (psutil.virtual_memory()[3]),
+                    'cpu_run': (psutil.cpu_percent()),
+                    'time_run': str(datetime.utcnow()),
+                    'error': ''
                 }
 
                 deb.debug(jsonify(msg))
+
+                elasticmodule(msg['id'], msg['time_run'], msg['name'], msg['user'], msg['memory_run'], 0,
+                              msg['cpu_run'], 0, msg['duration_run'], "00:00:00.000000", msg['error'])
 
                 ''' relationships '''
                 for uninqid in ret_ids:
@@ -529,15 +572,18 @@ class Module:
                     'id': str(self.id),
                     'name': str(self.__class__.__name__),
                     'user': str(USER.id),
-                    'error': 'error',
-                    'duration_run': str(time.time() - start_time),
-                    'memory_run': str(psutil.virtual_memory()[3]),
-                    'cpu_run': str(psutil.cpu_percent()),
-                    'time_run': str(time.time()),
+                    'error': 'module runtime error',
+                    'duration_run': str(datetime.utcnow() - start_time),
+                    'memory_run': (psutil.virtual_memory()[3]),
+                    'cpu_run': (psutil.cpu_percent()),
+                    'time_run': str(datetime.utcnow()),
                     'label': 'module'
                 }
 
                 err.error(jsonify(msg))
+
+                elasticmodule(msg['id'], msg['time_run'], msg['name'], msg['user'], msg['memory_run'], 0,
+                              msg['cpu_run'], 0, msg['duration_run'], 0, msg['error'])
 
                 ''' GDB part '''
                 #props = ['NAME:\"' + msg['name'] + '\"', 'id:\"' + msg['id'] + '\"',
@@ -552,6 +598,8 @@ class Module:
 
 
         else:
+            '''not using this part for implementation'''
+
             ret_ids = []
 
             for i in false_return:
@@ -565,14 +613,16 @@ class Module:
                 'id': str(self.id),
                 'name': str(self.__class__.__name__),
                 'user': str(USER.id),
-                'duration': str(time.time() - start_time),
-                'memory': str(psutil.virtual_memory()[3]),
-                'cpu': str(psutil.cpu_percent()),
-                'time': str(time.time())
+                'duration': str(datetime.utcnow() - start_time),
+                'memory': (psutil.virtual_memory()[3]),
+                'cpu': (psutil.cpu_percent()),
+                'time': str(datetime.utcnow()),
+                'error': ''
             }
 
 
             deb.debug(jsonify(msg))
+
 
             return false_return
 

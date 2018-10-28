@@ -4,6 +4,11 @@ from Operators import jsonify
 import time
 from random import randint
 
+class Error(Module):
+    def body(self):
+	r = 1/0	
+        
+	return Object(r)
 
 class FastQC(Module):
     def body(self):

@@ -110,3 +110,14 @@ class MaxMinProb(Module):
                 minname = i[0]
 
         return Object((maxname, maxval)), Object((minname, minval))
+
+class GrabN(Module):
+    def body(self):
+        lst = self.P[0].ref
+        n = self.P[1].ref
+
+        res = lst[n]
+
+        flow = Object(res)
+
+        return flow

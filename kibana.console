@@ -1,0 +1,62 @@
+
+DELETE *
+
+
+PUT userindex
+{
+  "mappings": {
+    "users": {
+      "properties": {
+        "time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss.SSSSSS"
+        }
+      }
+    }
+  }
+}
+
+
+PUT objectindex
+{
+  "mappings": {
+    "objects": {
+      "properties": {
+        "time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss.SSSSSS"
+        }
+      }
+    }
+  }
+}
+
+
+PUT fileindex
+{
+  "mappings": {
+    "files": {
+      "properties": {
+        "time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss.SSSSSS"
+        }
+      }
+    }
+  }
+}
+
+
+PUT moduleindex
+{
+  "mappings": {
+    "modules": {
+      "properties": {
+        "time": {"type": "date", "format": "yyyy-MM-dd HH:mm:ss.SSSSSS"},
+        "duration_run": {"type": "date", "format": "HH:mm:ss.SSSSSS"},
+        "duration_init": {"type": "date", "format": "HH:mm:ss.SSSSSS"}
+        
+      }
+    }
+  }
+}

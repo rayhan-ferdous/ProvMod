@@ -41,6 +41,7 @@ err = configuration.logger_error(logger_name, log_file)
 fatalerr = configuration.logger_fatal(logger_name, log_file)
 
 
+
 class User:
 
     def __init__(self):
@@ -50,6 +51,10 @@ class User:
         msg = {"event": "USR-INVK", "id": str(self.id), "name": str(self.name), 'time': str( datetime.utcnow() )}
 
         deb.debug(jsonify(msg))
+
+
+
+
 
 
 
@@ -88,7 +93,7 @@ class Object(Data):
                     'type': str(type(reference)),
                     'value': str(reference),
                     'user': str(USER.id),
-                    'memory': (psutil.virtual_memory()[2]),
+                    'memory': (psutil.virtual_memory()[3]),
                     'cpu': (psutil.cpu_percent()),
                     'time': str(datetime.utcnow()),
                     'label': 'object',
@@ -98,7 +103,6 @@ class Object(Data):
 
 
                 deb.debug(jsonify(msg))
-
 
 
 
@@ -121,7 +125,7 @@ class Object(Data):
                     'value': str(reference),
                     'user': str(USER.id),
                     'error': 'OCE',
-                    'memory': (psutil.virtual_memory()[2]),
+                    'memory': (psutil.virtual_memory()[3]),
                     'cpu': (psutil.cpu_percent()),
                     'time': str(datetime.utcnow()),
                     'label': 'object'
@@ -129,6 +133,10 @@ class Object(Data):
 
 
                 err.error(jsonify(msg))
+
+
+
+
 
 
 class File(Data):
@@ -152,7 +160,7 @@ class File(Data):
                 'id': str(self.id),
                 'user': str(USER.id),
                 'error': 'FCE',
-                'memory': (psutil.virtual_memory()[2]),
+                'memory': (psutil.virtual_memory()[3]),
                 'cpu': (psutil.cpu_percent()),
                 'time': str(datetime.utcnow()),
                 'label': 'file'
@@ -175,7 +183,7 @@ class File(Data):
                     'type': str(type(f)),
                     'source': str(f.name),
                     'user': str(USER.id),
-                    'memory': (psutil.virtual_memory()[2]),
+                    'memory': (psutil.virtual_memory()[3]),
                     'cpu': (psutil.cpu_percent()),
                     'time': str(datetime.utcnow()),
                     'label': 'file',
@@ -183,6 +191,8 @@ class File(Data):
                 }
 
                 deb.debug(jsonify(msg))
+
+
 
 
 
@@ -198,14 +208,13 @@ class File(Data):
                     'source': str(f.name),
                     'user': str(USER.id),
                     'error': 'OE',
-                    'memory': (psutil.virtual_memory()[2]),
+                    'memory': (psutil.virtual_memory()[3]),
                     'cpu': (psutil.cpu_percent()),
                     'time': str(datetime.utcnow()),
                     'label': 'file'
                 }
 
                 err.error(jsonify(msg))
-
 
 
 
@@ -229,7 +238,7 @@ class Document(Data):
                 'id': str(self.id),
                 'user': str(USER.id),
                 'error': 'error',
-                'memory': (psutil.virtual_memory()[2]),
+                'memory': (psutil.virtual_memory()[3]),
                 'cpu': (psutil.cpu_percent()),
                 'time': str(datetime.utcnow()),
                 'label': 'document'
@@ -252,7 +261,7 @@ class Document(Data):
                     'type': str(type(document)),
                     'address': str(document),
                     'user': str(USER.id),
-                    'memory': (psutil.virtual_memory()[2]),
+                    'memory': (psutil.virtual_memory()[3]),
                     'cpu': (psutil.cpu_percent()),
                     'time': str(datetime.utcnow()),
                     'label': 'document'
@@ -272,7 +281,7 @@ class Document(Data):
                     'address':  str(document),
                     'user':  str(USER.id),
                     'error':  'error',
-                    'memory': (psutil.virtual_memory()[2]),
+                    'memory': (psutil.virtual_memory()[3]),
                     'cpu': (psutil.cpu_percent()),
                     'time': str(datetime.utcnow()),
                     'label': 'document'
@@ -338,7 +347,7 @@ class Module:
                 'id': str(self.id),
                 'name': str(self.__class__.__name__),
                 'user': str(USER.id),
-                'memory_init': (psutil.virtual_memory()[2]),
+                'memory_init': (psutil.virtual_memory()[3]),
                 'cpu_init': (psutil.cpu_percent()),
                 'duration_init': str(datetime.utcnow()-start_time),
                 'time': str(datetime.utcnow()),
@@ -375,7 +384,7 @@ class Module:
                 'name': str(self.__class__.__name__),
                 'user': str(USER.id),
                 'error': 'MIE',
-                'memory_init': (psutil.virtual_memory()[2]),
+                'memory_init': (psutil.virtual_memory()[3]),
                 'cpu_init': (psutil.cpu_percent()),
                 'duration_init': str(datetime.utcnow()-start_time),
                 'time': str(datetime.utcnow()),
@@ -387,7 +396,6 @@ class Module:
 
             #print msg
             err.error(jsonify(msg))
-
 
 
     def run(self, when = True, false_return = None):
@@ -421,7 +429,7 @@ class Module:
                     'name': str(self.__class__.__name__),
                     'user': str(USER.id),
                     'duration_run': str(datetime.utcnow()-start_time),
-                    'memory_run': (psutil.virtual_memory()[2]),
+                    'memory_run': (psutil.virtual_memory()[3]),
                     'cpu_run': (psutil.cpu_percent()),
                     'time_run': str(datetime.utcnow()),
                     'error': 'success'
@@ -448,13 +456,15 @@ class Module:
                     'user': str(USER.id),
                     'error': 'MRE',
                     'duration_run': str(datetime.utcnow() - start_time),
-                    'memory_run': (psutil.virtual_memory()[2]),
+                    'memory_run': (psutil.virtual_memory()[3]),
                     'cpu_run': (psutil.cpu_percent()),
                     'time_run': str(datetime.utcnow()),
                     'label': 'module'
                 }
 
                 err.error(jsonify(msg))
+
+
 
 
 
@@ -476,7 +486,7 @@ class Module:
                 'name': str(self.__class__.__name__),
                 'user': str(USER.id),
                 'duration': str(datetime.utcnow() - start_time),
-                'memory': (psutil.virtual_memory()[2]),
+                'memory': (psutil.virtual_memory()[3]),
                 'cpu': (psutil.cpu_percent()),
                 'time': str(datetime.utcnow()),
                 'error': 'success'

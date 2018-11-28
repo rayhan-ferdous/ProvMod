@@ -1,0 +1,136 @@
+<clones>
+<systeminfo processor="nicad5" system="bioblend-master" granularity="functions-blind" threshold="30%" minlines="10" maxlines="2500"/>
+<cloneinfo npcs="697" npairs="26"/>
+<runinfo ncompares="10227" cputime="31304"/>
+
+<clone nlines="35" similarity="73">
+<source file="test/bioblend-master/bioblend/galaxy/workflows/__init__.py.pyindent" startline="206" endline="318" pcid="403"></source>
+<source file="test/bioblend-master/bioblend/galaxy/workflows/__init__.py.pyindent" startline="319" endline="477" pcid="404"></source>
+</clone>
+
+<clone nlines="29" similarity="100">
+<source file="test/bioblend-master/bioblend/galaxyclient.py.pyindent" startline="174" endline="200" pcid="79"></source>
+<source file="test/bioblend-master/bioblend/galaxyclient.py.pyindent" startline="201" endline="227" pcid="80"></source>
+</clone>
+
+<clone nlines="21" similarity="73">
+<source file="test/bioblend-master/bioblend/galaxy/workflows/__init__.py.pyindent" startline="16" endline="54" pcid="393"></source>
+<source file="test/bioblend-master/bioblend/galaxy/histories/__init__.py.pyindent" startline="36" endline="65" pcid="673"></source>
+</clone>
+
+<clone nlines="20" similarity="80">
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyHistories.py.pyindent" startline="153" endline="167" pcid="150"></source>
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyObjects.py.pyindent" startline="618" endline="629" pcid="269"></source>
+</clone>
+
+<clone nlines="18" similarity="88">
+<source file="test/bioblend-master/bioblend/cloudman/launch.py.pyindent" startline="592" endline="611" pcid="65"></source>
+<source file="test/bioblend-master/bioblend/cloudman/launch.py.pyindent" startline="632" endline="651" pcid="67"></source>
+</clone>
+
+<clone nlines="18" similarity="88">
+<source file="test/bioblend-master/bioblend/galaxy/histories/__init__.py.pyindent" startline="36" endline="65" pcid="673"></source>
+<source file="test/bioblend-master/bioblend/galaxy/tools/__init__.py.pyindent" startline="17" endline="50" pcid="447"></source>
+</clone>
+
+<clone nlines="18" similarity="88">
+<source file="test/bioblend-master/bioblend/galaxy/libraries/__init__.py.pyindent" startline="267" endline="296" pcid="637"></source>
+<source file="test/bioblend-master/bioblend/galaxy/histories/__init__.py.pyindent" startline="36" endline="65" pcid="673"></source>
+</clone>
+
+<clone nlines="18" similarity="83">
+<source file="test/bioblend-master/bioblend/galaxy/libraries/__init__.py.pyindent" startline="267" endline="296" pcid="637"></source>
+<source file="test/bioblend-master/bioblend/galaxy/tools/__init__.py.pyindent" startline="17" endline="50" pcid="447"></source>
+</clone>
+
+<clone nlines="17" similarity="76">
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyUsers.py.pyindent" startline="29" endline="42" pcid="85"></source>
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyUsers.py.pyindent" startline="44" endline="58" pcid="86"></source>
+</clone>
+
+<clone nlines="16" similarity="87">
+<source file="test/bioblend-master/bioblend/__init__.py.pyindent" startline="59" endline="72" pcid="334"></source>
+<source file="test/bioblend-master/bioblend/__init__.py.pyindent" startline="73" endline="86" pcid="335"></source>
+</clone>
+
+<clone nlines="15" similarity="80">
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyTools.py.pyindent" startline="58" endline="72" pcid="104"></source>
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyTools.py.pyindent" startline="73" endline="86" pcid="105"></source>
+</clone>
+
+<clone nlines="14" similarity="71">
+<source file="test/bioblend-master/bioblend/galaxy/objects/galaxy_instance.py.pyindent" startline="18" endline="27" pcid="603"></source>
+<source file="test/bioblend-master/bioblend/galaxy/objects/wrappers.py.pyindent" startline="340" endline="347" pcid="519"></source>
+</clone>
+
+<clone nlines="13" similarity="78">
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyWorkflows.py.pyindent" startline="125" endline="135" pcid="189"></source>
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyWorkflows.py.pyindent" startline="136" endline="144" pcid="190"></source>
+</clone>
+
+<clone nlines="13" similarity="71">
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyObjects.py.pyindent" startline="540" endline="550" pcid="259"></source>
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyObjects.py.pyindent" startline="630" endline="642" pcid="270"></source>
+</clone>
+
+<clone nlines="13" similarity="71">
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyObjects.py.pyindent" startline="630" endline="642" pcid="270"></source>
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyObjects.py.pyindent" startline="699" endline="708" pcid="280"></source>
+</clone>
+
+<clone nlines="12" similarity="75">
+<source file="test/bioblend-master/bioblend/_tests/CloudmanTestBase.py.pyindent" startline="65" endline="70" pcid="98"></source>
+<source file="test/bioblend-master/bioblend/cloudman/__init__.py.pyindent" startline="473" endline="483" pcid="32"></source>
+</clone>
+
+<clone nlines="12" similarity="91">
+<source file="test/bioblend-master/bioblend/config.py.pyindent" startline="41" endline="47" pcid="328"></source>
+<source file="test/bioblend-master/bioblend/config.py.pyindent" startline="48" endline="54" pcid="329"></source>
+</clone>
+
+<clone nlines="12" similarity="83">
+<source file="test/bioblend-master/bioblend/config.py.pyindent" startline="34" endline="40" pcid="327"></source>
+<source file="test/bioblend-master/bioblend/config.py.pyindent" startline="48" endline="54" pcid="329"></source>
+</clone>
+
+<clone nlines="12" similarity="83">
+<source file="test/bioblend-master/bioblend/config.py.pyindent" startline="34" endline="40" pcid="327"></source>
+<source file="test/bioblend-master/bioblend/config.py.pyindent" startline="41" endline="47" pcid="328"></source>
+</clone>
+
+<clone nlines="11" similarity="72">
+<source file="test/bioblend-master/bioblend/galaxy/objects/wrappers.py.pyindent" startline="538" endline="548" pcid="527"></source>
+<source file="test/bioblend-master/bioblend/_tests/CloudmanTestBase.py.pyindent" startline="65" endline="70" pcid="98"></source>
+</clone>
+
+<clone nlines="11" similarity="100">
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyObjects.py.pyindent" startline="540" endline="550" pcid="259"></source>
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyObjects.py.pyindent" startline="699" endline="708" pcid="280"></source>
+</clone>
+
+<clone nlines="11" similarity="72">
+<source file="test/bioblend-master/bioblend/galaxy/objects/client.py.pyindent" startline="212" endline="231" pcid="480"></source>
+<source file="test/bioblend-master/bioblend/galaxy/objects/client.py.pyindent" startline="310" endline="325" pcid="487"></source>
+</clone>
+
+<clone nlines="11" similarity="90">
+<source file="test/bioblend-master/bioblend/galaxy/objects/client.py.pyindent" startline="150" endline="165" pcid="474"></source>
+<source file="test/bioblend-master/bioblend/galaxy/objects/client.py.pyindent" startline="310" endline="325" pcid="487"></source>
+</clone>
+
+<clone nlines="11" similarity="72">
+<source file="test/bioblend-master/bioblend/galaxy/objects/client.py.pyindent" startline="150" endline="165" pcid="474"></source>
+<source file="test/bioblend-master/bioblend/galaxy/objects/client.py.pyindent" startline="212" endline="231" pcid="480"></source>
+</clone>
+
+<clone nlines="10" similarity="90">
+<source file="test/bioblend-master/bioblend/galaxy/libraries/__init__.py.pyindent" startline="434" endline="484" pcid="643"></source>
+<source file="test/bioblend-master/bioblend/galaxy/libraries/__init__.py.pyindent" startline="485" endline="534" pcid="644"></source>
+</clone>
+
+<clone nlines="10" similarity="90">
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyObjects.py.pyindent" startline="463" endline="469" pcid="247"></source>
+<source file="test/bioblend-master/bioblend/_tests/TestGalaxyObjects.py.pyindent" startline="589" endline="595" pcid="265"></source>
+</clone>
+
+</clones>

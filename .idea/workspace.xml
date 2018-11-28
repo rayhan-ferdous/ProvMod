@@ -2,251 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="893737d5-63f6-415d-ab41-97e257b47d98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Configuration/adapter_list.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Configuration/contaminant_list.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Configuration/limits.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/1 Introduction/1.1 What is FastQC.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/2 Basic Operations/2.1 Opening a sequence file.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/2 Basic Operations/2.2 Evaluating Results.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/2 Basic Operations/2.3 Saving a Report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/1 Basic Statistics.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/10 Adapter Content.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/11 Kmer Content.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/12 Per Tile Sequence Quality.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/2 Per Base Sequence Quality.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/3 Per Sequence Quality Scores.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/4 Per Base Sequence Content.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/5 Per Sequence GC Content.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/6 Per Base N Content.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/7 Sequence Length Distribution.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/8 Duplicate Sequences.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/9 Overrepresented Sequences.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/duplication_levels.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/kmer_profiles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/per_base_gc_content.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/per_base_n_content.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/per_base_quality.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/per_base_sequence_content.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/per_sequence_gc_content.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/per_sequence_quality.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/per_tile_quality.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Help/3 Analysis Modules/sequence_length_distribution.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/INSTALL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/LICENSE_JHDF5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/RELEASE_NOTES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Templates/Icons/error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Templates/Icons/fastqc_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Templates/Icons/tick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Templates/Icons/warning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Templates/fastqc2fo.xsl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/Templates/header_template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/cisd-jhdf5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/fastqc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/fastqc_icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/jbzip2-0.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/net/sourceforge/iharder/base64/Base64$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/net/sourceforge/iharder/base64/Base64$InputStream.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/net/sourceforge/iharder/base64/Base64$OutputStream.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/net/sourceforge/iharder/base64/Base64.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/analysis/UnivariateFunction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/analysis/solvers/AbstractUnivariateSolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/analysis/solvers/AllowedSolution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/analysis/solvers/BaseAbstractUnivariateSolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/analysis/solvers/BaseUnivariateSolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/analysis/solvers/BracketedUnivariateSolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/analysis/solvers/BrentSolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/analysis/solvers/UnivariateSolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/analysis/solvers/UnivariateSolverUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/AbstractIntegerDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/AbstractRealDistribution$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/AbstractRealDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/BetaDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/BinomialDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/CauchyDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/ChiSquaredDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/FDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/GammaDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/HypergeometricDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/IntegerDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/NormalDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/PascalDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/PoissonDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/RealDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/SaddlePointExpansion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/TDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/WeibullDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/distribution/ZipfDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/ConvergenceException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/DimensionMismatchException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/MathArithmeticException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/MathIllegalArgumentException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/MathIllegalNumberException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/MathIllegalStateException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/MathInternalError.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/MaxCountExceededException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/NoBracketingException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/NotFiniteNumberException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/NotPositiveException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/NotStrictlyPositiveException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/NullArgumentException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/NumberIsTooLargeException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/NumberIsTooSmallException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/OutOfRangeException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/TooManyEvaluationsException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/util/ArgUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/util/ExceptionContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/util/ExceptionContextProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/util/Localizable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/exception/util/LocalizedFormats.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/random/AbstractWell.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/random/BitsStreamGenerator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/random/RandomData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/random/RandomDataImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/random/RandomGenerator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/random/Well19937c.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/special/Beta$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/special/Beta.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/special/Erf.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/special/Gamma$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/special/Gamma.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/ArithmeticUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/ContinuedFraction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/DoubleArray.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/FastMath$ExpFracTable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/FastMath$ExpIntTable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/FastMath$lnMant.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/FastMath.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/FastMathCalc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/FastMathLiteralArrays.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/Incrementor$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/Incrementor$MaxCountExceededCallback.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/Incrementor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/MathUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/Precision.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/org/apache/commons/math3/util/ResizableDoubleArray.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/run_fastqc.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/sam-1.103.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Analysis/AnalysisListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Analysis/AnalysisQueue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Analysis/AnalysisRunner.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Analysis/OfflineRunner.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Dialogs/AboutDialog$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Dialogs/AboutDialog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Dialogs/FastQCTitlePanel$SmoothJLabel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Dialogs/FastQCTitlePanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Dialogs/WelcomePanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/FastQCApplication$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/FastQCApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/FastQCConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/FastQCMenuBar.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/FileFilters/BAMFileFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/FileFilters/CasavaFastQFileFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/FileFilters/FastQFileFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/FileFilters/GobyFileFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/FileFilters/MappedBAMFileFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/FileFilters/SequenceFileFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Graphs/BaseGroup.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Graphs/LineGraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Graphs/QualityBoxPlot.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Graphs/TileGraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Help/HelpDialog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Help/HelpIndexRoot$FileSorter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Help/HelpIndexRoot.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Help/HelpPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Help/HelpPageDisplay$HelpEditor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Help/HelpPageDisplay.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Help/HelpSearchPanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/AbstractQCModule.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/AdapterContent$Adapter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/AdapterContent$ResultsTable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/AdapterContent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/BasicStats$ResultsTable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/BasicStats.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/DuplicationLevel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/GCModel/GCModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/GCModel/GCModelValue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/KmerContent$Kmer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/KmerContent$ResultsTable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/KmerContent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/ModuleConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/ModuleFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/NContent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/OverRepresentedSeqs$OverrepresentedSeq.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/OverRepresentedSeqs$ResultsTable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/OverRepresentedSeqs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/PerBaseQualityScores.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/PerBaseSequenceContent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/PerSequenceGCContent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/PerSequenceQualityScores.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/PerTileQualityScores.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/QCModule.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Modules/SequenceLengthDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Report/HTMLReportArchive.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Report/stylesheet.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Resources/error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Resources/fastqc_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Resources/fastqc_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Resources/fastqc_icon_100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Resources/tick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Resources/warning.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Results/ResultsPanel$ModuleRenderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Results/ResultsPanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Sequence/BAMFile.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Sequence/Contaminant/Contaminant.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Sequence/Contaminant/ContaminantHit.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Sequence/Contaminant/ContaminentFinder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Sequence/Fast5File.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Sequence/FastQFile.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Sequence/QualityEncoding/PhredEncoding.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Sequence/Sequence.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Sequence/SequenceFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Sequence/SequenceFile.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Sequence/SequenceFileGroup.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Sequence/SequenceFormatException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Statistics/NormalDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Statistics/PearsonCorrelation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Utilities/CasavaBasename.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Utilities/HotColdColourGradient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Utilities/ImageToBase64.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Utilities/MultiMemberGZIPInputStream.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Utilities/NameFormatException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Utilities/NanoporeBasename.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Utilities/QualityCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/FastQC/uk/ac/babraham/FastQC/Utilities/RGB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/Main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/Operators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/ProvModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/Tools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/configuration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/data/cpu_vs_log_duration.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/data/cross.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/data/error_group.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/data/error_group_cpu.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/data/frequency.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/data/mod_freq.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/data/mod_name_error.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/data/multi_mod_single_prop.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/data/single_freq.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/data/single_mod_single_prop.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/dna0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/dna1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/dna2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/dna3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/fq0.fq" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/fq0_fastqc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/fq0_fastqc.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/fq1.bed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/fq2.fa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/fq3.fastq" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/fq3_fastqc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/fq3_fastqc.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/fq4.fastq" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/fq4_fastqc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kibana user study code/gene/fq4_fastqc.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana user study code/gene/fq0_fastqc.html" beforeDir="false" afterPath="$PROJECT_DIR$/kibana user study code/gene/fq0_fastqc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana user study code/gene/fq0_fastqc.zip" beforeDir="false" afterPath="$PROJECT_DIR$/kibana user study code/gene/fq0_fastqc.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana user study code/gene/fq3_fastqc.html" beforeDir="false" afterPath="$PROJECT_DIR$/kibana user study code/gene/fq3_fastqc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana user study code/gene/fq3_fastqc.zip" beforeDir="false" afterPath="$PROJECT_DIR$/kibana user study code/gene/fq3_fastqc.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana user study code/gene/fq4_fastqc.html" beforeDir="false" afterPath="$PROJECT_DIR$/kibana user study code/gene/fq4_fastqc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kibana user study code/gene/fq4_fastqc.zip" beforeDir="false" afterPath="$PROJECT_DIR$/kibana user study code/gene/fq4_fastqc.zip" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -293,9 +55,13 @@
     <session id="994887399">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.4" value="8" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -328,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kibana user study code/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1408">
-              <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+            <state relative-caret-position="748">
+              <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -562,9 +328,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="-4" width="1867" height="1084" extended-state="6" />
+    <frame x="52" y="-11" width="1869" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18913044" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18913044" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -628,13 +395,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kibana user study code/workflow.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/kibana user study code/workflow.log" />
     <entry file="file://$PROJECT_DIR$/kibana user study code/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="67" column="48" selection-start-line="67" selection-start-column="48" selection-end-line="67" selection-end-column="48" />
+        <state relative-caret-position="748">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
         </state>
       </provider>
     </entry>

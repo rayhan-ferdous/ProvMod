@@ -10,4 +10,4 @@ https://youtu.be/dUELPZyriE0
 # Learn Provmod
 See the wiki page https://github.com/rayhan-ferdous/Provmod/wiki for simple tutorial at a glance.
 
-The work is made by Rayhan Ferdous, graduate researcher at the Dept. of CS (SR Lab), University of Saskatchewan, Canada.
+The work is made by Rayhan Ferdous, graduate researcher at the Dept. of CS (SR Lab), University of Saskatchewan, Canada during MSc studies.

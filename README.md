@@ -16,3 +16,9 @@ See the wiki page https://github.com/rayhan-ferdous/Provmod/wiki for simple tuto
 The work is made by Rayhan Ferdous, graduate researcher at the Dept. of CS (SR Lab), University of Saskatchewan, Canada during MSc studies.
 
 # Visualization Samples
+
+![Sample 2](https://github.com/rayhan-ferdous/ProvMod/blob/master/pie2.png)
+
+![Sample 1](https://github.com/rayhan-ferdous/ProvMod/blob/master/timeseries.png)
+
+![Sample 3](https://github.com/rayhan-ferdous/ProvMod/blob/master/graph.png)

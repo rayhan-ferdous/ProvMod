@@ -6,7 +6,8 @@ It makes use of the work from https://github.com/rayhan-ferdous/DPLib which is a
 https://harvest.usask.ca/handle/10388/11902
 
 # Video Demo
-https://youtu.be/nCWFRhHe7es (core demo)
+
+[![core demo](https://img.youtube.com/vi/nCWFRhHe7es/0.jpg)](https://youtu.be/nCWFRhHe7es "core demo")
 
 https://youtu.be/dUELPZyriE0 (implementation with Neo4j+ELK Stack demo)
 

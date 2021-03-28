@@ -7,9 +7,11 @@ https://harvest.usask.ca/handle/10388/11902
 
 # Video Demo
 
+## System Core Demonstration
 [![Watch the video](https://assets.entrepreneur.com/content/3x2/2000/20180117155526-youtube.jpeg?width=600&crop=16:9)](https://youtu.be/nCWFRhHe7es "System Core Demonstration")
 
-https://youtu.be/dUELPZyriE0 (implementation with Neo4j+ELK Stack demo)
+## Implementation Integrated with Neo4j + ELK Stack Demonstration
+[![Watch the video](https://assets.entrepreneur.com/content/3x2/2000/20180117155526-youtube.jpeg?width=600&crop=16:9)](https://youtu.be/dUELPZyriE0 "ProvMod + Neo4j + ELK Stack")
 
 # Learn Provmod
 See the wiki page https://github.com/rayhan-ferdous/Provmod/wiki for simple tutorial at a glance.

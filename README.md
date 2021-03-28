@@ -7,7 +7,7 @@ https://harvest.usask.ca/handle/10388/11902
 
 # Video Demo
 
-[![core demo](https://img.youtube.com/vi/nCWFRhHe7es/0.jpg)](https://youtu.be/nCWFRhHe7es "core demo")
+[![Watch the video](https://assets.entrepreneur.com/content/3x2/2000/20180117155526-youtube.jpeg?width=600&crop=16:9)](https://youtu.be/nCWFRhHe7es "System Core Demonstration")
 
 https://youtu.be/dUELPZyriE0 (implementation with Neo4j+ELK Stack demo)
 
